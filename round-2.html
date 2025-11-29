@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeopardy - Second Round</title>
-    <script type="module" crossorigin src="./assets/index-DExL7Tul.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BtwzUCe1.css">
+    <script type="module" crossorigin src="/Jeopardy-Part-I/assets/index-CJEsB1kC.js"></script>
+    <link rel="stylesheet" crossorigin href="/Jeopardy-Part-I/assets/index-C3aMezJX.css">
   </head>
 
   <body>
@@ -89,16 +89,23 @@
         </div>
       </div>
 
-      <div class="game-controls">
-        <input type="text" placeholder="Enter your answer" id="user-guess" />
-        <button class="btn-guess">Guess</button>
-        <button class="btn-pass">Pass</button>
-      </div>
-
       <div class="navigation">
         <button onclick="window.location.href='./final-jeopardy.html'" class="btn-next">Final Round</button>
       </div>
     </main>
+
+    <!-- Question Modal -->
+    <div class="modal-overlay" id="question-modal">
+      <div class="modal-content">
+        <div class="modal-question" id="modal-question-text"></div>
+        <div class="game-controls">
+          <input type="text" placeholder="Enter your answer" id="user-guess" />
+          <br>
+          <button class="btn-guess">Guess</button>
+          <button class="btn-pass">Pass</button>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p>Jeopardy! Game | © 2025 Jeopardy Productions, Inc.</p>
