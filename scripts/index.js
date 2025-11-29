@@ -33,7 +33,9 @@ const elements = {
     wagerInput: document.getElementById("wager"),
     answerInput: document.getElementById("answer"),
     wagerButton: document.querySelector("#wager-form button"),
-    finalSubmitButton: document.querySelector("#answer-form button")
+    finalSubmitButton: document.querySelector("#answer-form button"),
+    modalOverlay: document.getElementById("question-modal"),
+    modalQuestionText: document.getElementById("modal-question-text")
 };
 
 // Initialization
@@ -134,9 +136,13 @@ function handleCardClick(event) {
     };
     gameState.passCount = 0;
 
-    // Display Question
-    card.textContent = gameState.currentQuestion.question;
-    card.classList.add("active"); // Add a class for styling active question if needed
+    // Display Question in Modal
+    if (elements.modalQuestionText) {
+        elements.modalQuestionText.textContent = gameState.currentQuestion.question;
+    }
+    if (elements.modalOverlay) {
+        elements.modalOverlay.classList.add("active");
+    }
 
     // Enable Controls
     elements.guessButton.disabled = false;
@@ -210,6 +216,11 @@ function updateScoreBoard() {
 }
 
 function endQuestion(answeredCorrectly) {
+    // Hide Modal
+    if (elements.modalOverlay) {
+        elements.modalOverlay.classList.remove("active");
+    }
+
     // Clear card
     gameState.currentCard.textContent = "";
     gameState.currentCard.classList.add("disabled");
