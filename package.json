@@ -1,0 +1,30 @@
+{
+  "name": "unit-1-project-jeopardy-r-jaiii",
+  "version": "1.0.0",
+  "description": "Jeopardy! The great American quiz show has been a staple of network television since the 60s. In this project we will be creating our own Jeopardy board which we will build the functionality for in later weeks. For now we're going to focus on site design and navigation.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjaedev/Jeopardy-Part-I.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arjaedev/Jeopardy-Part-I/issues"
+  },
+  "homepage": "https://github.com/arjaedev/Jeopardy-Part-I#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^7.2.4"
+  }
+}
