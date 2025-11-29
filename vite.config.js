@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
+  base: '/Jeopardy-Part-I/',
   build: {
     rollupOptions: {
       input: {
@@ -12,5 +13,4 @@ export default defineConfig({
       },
     },
   },
-  base: './', // Ensures relative paths for assets so it works on GitHub Pages subdirectories
-});
+})
