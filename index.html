@@ -4,11 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Play the classic Jeopardy! game online. Test your knowledge and have fun!" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Jeopardy</title>
+    <script src="./scripts/index.js" type="module"></script>
   </head>
   <body>
-    <h1>Welcome to Jeopardy!</h1>
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/index.js" type="module"></script>
+    <header>
+      <h1>Welcome to Jeopardy!</h1>
+    </header>
+
+    <main>
+      <div class="pic">
+        <img 
+          src="https://sm.ign.com/ign_nordic/feature/a/are-jeopar/are-jeopardy-contestants-getting-better_x7rn.jpg" 
+          alt="Jeopardy contestants on stage during a game show"
+        />
+      </div>
+
+      <div class="next">
+        <button 
+          aria-label="Start the Jeopardy game" 
+          onclick="window.location.href='./round-1.html'"
+        >
+          PLAY
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Jeopardy! Game | © 2025 Jeopardy Productions, Inc.</p>
+    </footer>
   </body>
 </html>

@@ -4,11 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Final Jeopardy</title>
-  </head>
-  <body>
-    <h1>Final Jeopardy</h1>
-    <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Final Jeopardy</h1>
+    </header>
+
+    <main>
+      <section class="final-jeopardy">
+        <div class="category">Final Jeopardy Category</div>
+        <div class="question">
+          What is the smallest planet in our solar system?
+        </div>
+
+        <form id="wager-form">
+          <div class="input-group">
+            <label for="wager">Your Wager:</label>
+            <input id="wager" type="number" placeholder="Enter your wager" required />
+            <button type="submit">Place Bet</button>
+          </div>
+        </form>
+
+        <form id="answer-form">
+          <div class="input-group">
+            <label for="answer">Your Answer:</label>
+            <input id="answer" type="text" placeholder="Enter your answer" />
+            <button type="submit" disabled>Submit Answer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Jeopardy! Game | © 2025 Jeopardy Productions, Inc.</p>
+    </footer>
   </body>
 </html>

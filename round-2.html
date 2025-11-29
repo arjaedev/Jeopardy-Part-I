@@ -4,12 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeopardy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jeopardy - Second Round</title>
     <script src="./scripts/index.js" type="module"></script>
   </head>
+
   <body>
-    <h1>Second Round</h1>
-    <!-- Do not change the script source. Allows import/export to work. -->
-    <script src="./scripts/index.js" type="module"></script>
+    <header class="top-header">
+      <h1>Second Round</h1>
+      <h2 class="turn-indicator">Player 2's Turn</h2>
+    </header>
+
+    <main>
+      <div class="score-board">
+        <div class="player-score">
+          <h3>Player 1</h3>
+          <p class="score">0</p>
+        </div>
+        <div class="player-score">
+          <h3>Player 2</h3>
+          <p class="score">0</p>
+        </div>
+      </div>
+
+      <div class="Game-board">
+        <!-- Column 1 -->
+        <div class="topic">
+          <div class="category-title">Nature</div>
+          <div class="card">400</div>
+          <div class="card">800</div>
+          <div class="card">1200</div>
+          <div class="card">1600</div>
+          <div class="card">2000</div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="topic">
+          <div class="category-title">Animals</div>
+          <div class="card">400</div>
+          <div class="card">800</div>
+          <div class="card">1200</div>
+          <div class="card">1600</div>
+          <div class="card">2000</div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="topic">
+          <div class="category-title">Computers</div>
+          <div class="card">400</div>
+          <div class="card">800</div>
+          <div class="card">1200</div>
+          <div class="card">1600</div>
+          <div class="card">2000</div>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="topic">
+          <div class="category-title">Mythology</div>
+          <div class="card">400</div>
+          <div class="card">800</div>
+          <div class="card">1200</div>
+          <div class="card">1600</div>
+          <div class="card">2000</div>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="topic">
+          <div class="category-title">History</div>
+          <div class="card">400</div>
+          <div class="card">800</div>
+          <div class="card">1200</div>
+          <div class="card">1600</div>
+          <div class="card">2000</div>
+        </div>
+
+        <!-- Column 6 -->
+        <div class="topic">
+          <div class="category-title">General</div>
+          <div class="card">400</div>
+          <div class="card">800</div>
+          <div class="card">1200</div>
+          <div class="card">1600</div>
+          <div class="card">2000</div>
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <input type="text" placeholder="Enter your answer" id="user-guess" />
+        <button class="btn-guess">Guess</button>
+        <button class="btn-pass">Pass</button>
+      </div>
+
+      <div class="navigation">
+        <button onclick="window.location.href='./final-jeopardy.html'" class="btn-next">Final Round</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Jeopardy! Game | © 2025 Jeopardy Productions, Inc.</p>
+    </footer>
   </body>
 </html>
